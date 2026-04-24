@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-syne: "Syne", sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-inter: "Inter", sans-serif;
+
+    /* ── MODE CLAIR ── */
+    --color-bg: #f4f4f0;
+    --color-surface: #eaeae5;
+    --color-border: #d0d0c8;
+    --color-accent: #3700ff;
+    --color-accent-dim: #3700ff15;
+    --color-muted: #222221;
+    --color-light: #1a1a1a;
+}
+
+/* ── MODE SOMBRE ── */
+.dark {
+    --color-bg: #0d0d0d;
+    --color-surface: #151515;
+    --color-border: #222222;
+    --color-accent: #0084ff;
+    --color-accent-dim: #3700ff15;
+    --color-muted: #e7e7e7;
+    --color-light: #e8e8e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-light);
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 2px;
+}
+
+::selection {
+    background: #3700ff33;
+    color: var(--color-accent);
+}
