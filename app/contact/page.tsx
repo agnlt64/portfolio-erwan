@@ -75,7 +75,7 @@ export default function Contact() {
                                     Disponible
                                 </span>
                             </div>
-                            <p className="font-body text-base text-muted">
+                            <p className="font-mono text-sm text-muted">
                                 Actuellement à la recherche d&apos;une
                                 alternance pour la rentrée 2026 dans le domain
                                 du développement informatique.
@@ -103,12 +103,12 @@ export default function Contact() {
                                                 href={info.lien}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="font-body text-sm text-light group-hover:text-accent transition-colors break-all"
+                                                className="font-mono text-sm text-light group-hover:text-accent transition-colors break-all"
                                             >
                                                 {info.valeur}
                                             </a>
                                         ) : (
-                                            <p className="font-body text-sm text-light">
+                                            <p className="font-mono text-sm text-light">
                                                 {info.valeur}
                                             </p>
                                         )}
